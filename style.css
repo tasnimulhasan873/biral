@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .yumi {
+    color: tomato;
+    font-size: 50px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    background-color: #afc5ff;
+    margin: 20px 0;
+  }
+  
+  #toggleButton {
+    color: tomato;
+    font-size: 20px;
+    font-weight: 900;
+    background-color: aquamarine;
+    border: 1px solid;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  button {
+    margin: 20px;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .box {
+    width: calc(100% / 3 - 20px); /* Adjust to fit 3 boxes per row */
+    max-width: 300px;
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 5px;
+    border-color: #a1c9d7;
+  }
+  
+  .box img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    border-radius: 5px;
+  }
+  
+  .box1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 5px;
+    border-color: #a1c9d7;
+  }
+  
+  img {
+    border-radius: 5px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .box {
+      width: calc(50% - 10px); /* Fit 2 boxes per row on tablets */
+    }
+  
+    #toggleButton {
+      font-size: 18px;
+      padding: 8px 16px;
+    }
+  
+    .yumi {
+      font-size: 40px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .box {
+      width: 100%; /* Full-width on small screens */
+    }
+  
+    #toggleButton {
+      font-size: 16px;
+      padding: 6px 12px;
+    }
+  
+    .yumi {
+      font-size: 30px;
+    }
+  }
+  
